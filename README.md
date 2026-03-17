@@ -9,6 +9,12 @@ This design ensures both efficiency and thorough data collection.
 
 ---
 
+## Preview
+
+![preview.png](preview.png)
+
+---
+
 ## Features
 
 * Extract key information for each place:
