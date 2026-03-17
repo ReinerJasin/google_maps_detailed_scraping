@@ -64,6 +64,8 @@ cd google_maps_detailed_scraping
 5. Wait until extraction completes
 6. Enter a custom filename if desired, then click `Download CSV`
 
+---
+
 ## Detailed Scraping (Selenium)
 
 > The Selenium-based detailed scraping module is currently under development and may not yet be released.
@@ -85,6 +87,7 @@ This allows more in-depth analysis beyond the initial extraction.
 ---
 
 ## Notes
+
 * This code was created with the assistance of AI models (ChatGPT) and may not be fully accurate out of the box.
 * All functionality has been curated and verified to ensure correct results for its intended use.
 * Google Maps interface may change, requiring updates to selectors.
