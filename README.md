@@ -46,7 +46,7 @@ cd google_maps_detailed_scraping
 
 1. Open **Google Chrome** and go to: `chrome://extensions/`
 2. Enable **Developer Mode** (top right corner)
-3. Click **Load unpacked** and select the repository folder
+3. Click **Load unpacked** and select the `google_maps_scraper` folder
 4. The extension will now appear in your Chrome toolbar
 
 ### 3. Optional: Pin the extension

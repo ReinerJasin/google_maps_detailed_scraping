@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
     "name": "Google Maps Places Scraper",
-    "description": "Google Maps Easy Scrape by Mike Powers",
-    "version": "1.0",
+    "description": "Google Maps Places Scraper by Reiner Jasin",
+    "version": "0.1.1",
 
     "permissions": [
         "activeTab",
@@ -16,7 +16,7 @@
     
     "action": {
         "default_popup": "popup.html",
-        "default_title": "Maps Scraper"
+        "default_title": "Google Maps Scraper"
     },
     
     "icons": {
