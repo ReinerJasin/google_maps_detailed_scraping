@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Maps Places Scraper</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f4f6f9;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h3 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        /* Button styling */
+        button {
+            padding: 10px 15px;
+            margin: 10px 0;
+            width: 100%;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 14px;
+            color: #fff;
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background: linear-gradient(135deg, #3b41a6, #6f74e5);
+            transform: translateY(-2px);
+        }
+
+        /* Input field styling */
+        input[type="text"] {
+            width: 100%;
+            padding: 8px 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+
+        /* Table container styling */
+        #tableContainer {
+            max-height: 300px;
+            overflow-y: auto;
+            margin-top: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            background-color: #fff;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4e54c8;
+            color: #fff;
+            position: sticky;
+            top: 0;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Status message */
+        #status {
+            font-size: 13px;
+            color: #34495e;
+            margin: 5px 0;
+        }
+
+        /* Footer */
+        #footer {
+            text-align: center;
+            margin-top: 22px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        #footer span {
+            font-weight: 600;
+            color: #4e54c8;
+        }
+
+        /* GitHub link */
+        #githubLink {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 13px;
+        }
+
+        #githubLink a {
+            text-decoration: none;
+            color: #4e54c8;
+            font-weight: bold;
+        }
+
+        #githubLink a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<h3>Google Maps Places Scraper</h3>
+
+<!-- Extract Places button -->
+<button id="extractBtn">Extract Places</button>
+<div id="status"></div>
+
+<!-- Result preview -->
+<div id="tableContainer">
+    <table id="resultsTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Rating</th>
+                <th>Reviews</th>
+                <th>Price</th>
+                <th>Address</th>
+                <th>Status</th>
+                <th>Image</th>
+                <th>URL</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<!-- Custom File Name -->
+<input type="text" id="filenameInput" placeholder="Enter custom file name"/>
+
+<!-- Download as CSV button -->
+<button id="downloadBtn">Download CSV</button>
+
+<!-- GitHub link -->
+<div id="githubLink">
+    Source code on <a href="https://github.com/ReinerJasin/google_maps_detailed_scraping" target="_blank">GitHub</a>
+</div>
+
+<div id="footer">
+    Made by <span>Reiner Jasin</span>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
